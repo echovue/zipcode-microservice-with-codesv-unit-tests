@@ -7,7 +7,6 @@ import org.springframework.web.client.RestTemplate;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Optional;
-import java.util.logging.Level;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,7 +14,7 @@ import org.slf4j.LoggerFactory;
 public class ZipcodeDistanceService {
     private static final Logger LOGGER = LoggerFactory.getLogger(ZipcodeDistanceService.class);
     private URL zipcodeapi;
-    private String apiKey = "";
+    protected static final String apiKey = "JZyKNKvzMavcTNzziyPB2tm9upKOTccHLCumREmXz14CfwCgjcwy4RO0wH3rmeV5";
 
     public Optional<Double> getDistance(final String zipCode1,
                                         final String zipCode2) {
